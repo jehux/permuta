@@ -8,6 +8,17 @@
 	</head>
 	<body background="normal.png">
 		<div class=Title> Agregar lista de amigos ☻</div>
+		<div class="Organizador">
+			<p class="Indication"> Organizador </p>
+			<div class="mb-3">
+  				<label for="exampleFormControlTextarea1" class="form-label">Nombre del Organizador</label>
+  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
+			</div>
+			<div class="mb-3">
+  				<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+  				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoOrganizador@ejemplo.com">
+			</div>
+		</div>
 		<div class="invitados">
 			<p class="Indication"> Lista de invitados </p>
 			<div class="mb-3">
@@ -18,16 +29,13 @@
   				<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
   				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoInvitado@ejemplo.com">
 			</div>
-		</div>
-		<div class="Organizador">
-			<p class="Indication"> Organizador </p>
 			<div class="mb-3">
-  				<label for="exampleFormControlTextarea1" class="form-label">Nombre del Organizador</label>
+  				<label for="exampleFormControlTextarea1" class="form-label">Nombre del Invitado</label>
   				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
 			</div>
 			<div class="mb-3">
   				<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-  				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoOrganizador@ejemplo.com">
+  				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoInvitado@ejemplo.com">
 			</div>
 		</div>
         <div class="controls">
@@ -52,13 +60,27 @@
         color: white;        
         font-size: 4rem;
         font-family: 'Dancing Script', cursive;
-        position: center;
+        position: relative;
     }
     .Indication{
-    	color: white;
+    	color:white;
+    }
+    .invitados{
+    	float:left;
+    	padding:2em;
+    	width:45%
+    }
+    .Organizador{
+    	float:right;
+    	padding:2em;
+    	width:45%
     }
     .form-label{
     	color: white;
+    }
+    .controls{
+        float:right;
+        padding:4em;
     }
 
 </style>
