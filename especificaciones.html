@@ -7,33 +7,65 @@
     	<link rel="stylesheet" href="css/bootstrap.css">
 	</head>
 	<body background="normal.png">
-		<div class=Title> Seamos claros... </div>
-		<div class="costo-prefencias">
-			<div class="mb-3">
-  				<label for="exampleFormControlTextarea1" class="form-label">Costo</label>
-  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Valor numerico"></textarea>
+		<nav class="navbar navbar-expand-lg navbar-dark mi-navbar">
+			<a class="navbar-brand" href="#">Permuta</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Intercambio
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Crear</a>
+						<a class="dropdown-item" href="#">Unirte</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Consultar</a>
+					</div>
+				</li>
+			  </ul>
+			  <ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="Registro.html">Registrarse</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Iniciar sesion</a>
+					</li>
+			  </ul>
 			</div>
-			<div class="mb-3">
-  				<label for="exampleFormControlInput1" class="form-label">Selecciona 3 temas para el intercambio</label>
+		</nav>
+		<div class="back-img">
+			<div class="formulario">
+				<div class=Title> Seamos claros... </div>
+				<div class="costo-prefencias">
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Costo</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Valor numerico"></textarea>
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Selecciona 3 temas para el intercambio</label>
+					</div>
+				</div>
+				<div class="Fechas-Mensaje">
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Fecha de registro</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Fecha maxima de registro"></textarea>
+						<label for="exampleFormControlTextarea1" class="form-label">Fecha de Realización</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Fecha de intercambio"></textarea>
+						<label for="exampleFormControlTextarea1" class="form-label">¿Cual es tu deseo navideño?</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe un mensaje para que lo puedan leer los participantes"></textarea>
+					</div>
+				</div>
+				<div class="controls">
+					<div class="boton"> 
+						<button type="button" class="btn btn-warning">Añadir participantes</button>
+						<a href="EstatusInvit.html"><button type="button" class="btn btn-warning">Continuar</button>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="Fechas-Mensaje">
-			<div class="mb-3">
-				<label for="exampleFormControlTextarea1" class="form-label">Fecha de registro</label>
-  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Fecha maxima de registro"></textarea>
-  				<label for="exampleFormControlTextarea1" class="form-label">Fecha de Realización</label>
-  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Fecha de intercambio"></textarea>
-  				<label for="exampleFormControlTextarea1" class="form-label">¿Cual es tu deseo navideño?</label>
-  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe un mensaje para que lo puedan leer los participantes"></textarea>
-			</div>
-		</div>
-		<div class="controls">
-            <div class="boton"> 
-            	<button type="button" class="btn btn-warning">Añadir participantes</button>
-            	<a href="EstatusInvit.html"><button type="button" class="btn btn-warning">Continuar</button>
-            </div>
-        </div>
-
     	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     	<script src="./js/bootstrap.bundle.js"></script>
     	<script src="./js/bootstrap.min.js"></script>
@@ -42,7 +74,31 @@
 </html>
 
 <style type="text/css">
-
+	.mi-navbar{
+        background-color: #090f1d;
+    }
+	.back-img{
+		width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+        padding: 3em;   
+    }
+	.back-img:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.3);
+    }
+	.formulario{
+		position: relative;
+	}
 	.Title{
         color: white;        
         font-size: 4rem;

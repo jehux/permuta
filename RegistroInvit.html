@@ -7,43 +7,77 @@
     	<link rel="stylesheet" href="css/bootstrap.css">
 	</head>
 	<body background="normal.png">
-		<div class=Title> Agregar lista de amigos ☻</div>
-		<div class="Organizador">
-			<p class="Indication"> Organizador </p>
-			<div class="mb-3">
-  				<label for="exampleFormControlTextarea1" class="form-label">Nombre del Organizador</label>
-  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
-			</div>
-			<div class="mb-3">
-  				<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-  				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoOrganizador@ejemplo.com">
-			</div>
-		</div>
-		<div class="invitados">
-			<p class="Indication"> Lista de invitados </p>
-			<div class="mb-3">
-  				<label for="exampleFormControlTextarea1" class="form-label">Nombre del Invitado</label>
-  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
-			</div>
-			<div class="mb-3">
-  				<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-  				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoInvitado@ejemplo.com">
-			</div>
-			<div class="mb-3">
-  				<label for="exampleFormControlTextarea1" class="form-label">Nombre del Invitado</label>
-  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
-			</div>
-			<div class="mb-3">
-  				<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-  				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoInvitado@ejemplo.com">
-			</div>
-		</div>
-        <div class="controls">
-            <div class="boton"> 
-            	<a href="especificaciones.html"><button type="button" class="btn btn-warning">Añadir participantes</button>
-            	<button type="button" class="btn btn-warning">Continuar</button>
-            </div>
+		<nav class="navbar navbar-expand-lg navbar-dark mi-navbar">
+        <a class="navbar-brand" href="#">Permuta</a>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Intercambio
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Crear</a>
+                    <a class="dropdown-item" href="#">Unirte</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Consultar</a>
+                </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Registro.html">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Iniciar sesion</a>
+                </li>
+          </ul>
         </div>
+		</nav>
+		<div class="back-img">
+			<div class="formularios">
+				<div class=Title> Agregar lista de amigos ☻</div>
+				<div class="Organizador">
+					<p class="Indication"> Organizador </p>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Nombre del Organizador</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoOrganizador@ejemplo.com">
+					</div>
+				</div>
+				<div class="invitados">
+					<p class="Indication"> Lista de invitados </p>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Nombre del Invitado</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoInvitado@ejemplo.com">
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Nombre del Invitado</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoInvitado@ejemplo.com">
+					</div>
+				</div>
+				<div class="controls">
+					<div class="boton"> 
+						<a href="especificaciones.html"><button type="button" class="btn btn-warning">Añadir participantes</button>
+						<button type="button" class="btn btn-warning">Continuar</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
     	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -55,7 +89,32 @@
 </html>
 
 <style type="text/css">
-
+	.mi-navbar{
+        background-color: #090f1d;
+    }
+	.back-img{
+		width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+        padding: 3em;
+        
+    }
+	.back-img:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.3);
+    }
+	.formularios{
+		position: relative;
+	}
 	.Title{
         color: white;        
         font-size: 4rem;
@@ -68,12 +127,12 @@
     .invitados{
     	float:left;
     	padding:2em;
-    	width:45%
+    	width:45%;
     }
     .Organizador{
     	float:right;
     	padding:2em;
-    	width:45%
+    	width:45%;
     }
     .form-label{
     	color: white;
