@@ -13,11 +13,19 @@
   				<label for="exampleFormControlTextarea1" class="form-label">Costo</label>
   				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Valor numerico"></textarea>
 			</div>
-			<div class="mb-3">
-  				<label for="exampleFormControlInput1" class="form-label">Selecciona 3 temas para el intercambio</label>
+			<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+  				<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+  				<label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+
+  				<input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+  				<label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+
+  				<input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+  				<label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
 			</div>
 			<div class="mb-3">
-			<label for="exampleFormControlTextarea1" class="form-label">Tema 1 de regalo</label>
+				<br><p class="Indication"> Selecciona los 3 temas para el intercambio </p>
+				<label for="exampleFormControlTextarea1" class="form-label">Tema 1 de regalo</label>
 				<select class="form-select form-select-sm" aria-label=".form-select-sm example" rows="1">
   					<option selected>Ver opciones de selección</option>
   					<option value="1">Libros</option>
@@ -59,8 +67,8 @@
   				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Fecha maxima de registro"></textarea>
   				<label for="exampleFormControlTextarea1" class="form-label">Fecha de Realización</label>
   				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Fecha de intercambio"></textarea>
-  				<label for="exampleFormControlTextarea1" class="form-label">¿Cual es tu deseo navideño?</label>
-  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe un mensaje para que lo puedan leer los participantes"></textarea>
+  				<br><br><label for="exampleFormControlTextarea1" class="form-label">¿Cual es tu deseo navideño?</label>
+  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Escribe un mensaje para que lo puedan leer los participantes"></textarea>
 			</div>
 		</div>
 		<div class="controls">
@@ -87,6 +95,7 @@
     }
     .Indication{
     	color:white;
+    	font-size: 1.5em;
     }
     .costo-prefencias{
     	float:left;
