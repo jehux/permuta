@@ -2,18 +2,68 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-		<title> Merry Christmas - Especificaciones </title>
-		<link rel="stylesheet" type="text/css" href="styles.css" media="all"/>
+		<title> Especificaciones </title>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> 
+    	<link rel="stylesheet" href="css/bootstrap.css">
 	</head>
 	<body background="normal.png">
-		<div class="mb-3">
-  			<label for="exampleFormControlInput1" class="form-label">Email address</label>
-  			<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+		<div class=Title> Seamos claros... </div>
+		<div class="costo-prefencias">
+			<div class="mb-3">
+  				<label for="exampleFormControlTextarea1" class="form-label">Costo</label>
+  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Valor numerico"></textarea>
+			</div>
+			<div class="mb-3">
+  				<label for="exampleFormControlInput1" class="form-label">Selecciona 3 temas para el intercambio</label>
+			</div>
 		</div>
-		<div class="mb-3">
-  			<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		<div class="Fechas-Mensaje">
+			<div class="mb-3">
+				<label for="exampleFormControlTextarea1" class="form-label">Fecha de registro</label>
+  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Fecha maxima de registro"></textarea>
+  				<label for="exampleFormControlTextarea1" class="form-label">Fecha de Realización</label>
+  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Fecha de intercambio"></textarea>
+  				<label for="exampleFormControlTextarea1" class="form-label">¿Cual es tu deseo navideño?</label>
+  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe un mensaje para que lo puedan leer los participantes"></textarea>
+			</div>
 		</div>
+		<div class="controls">
+            <div class="boton"> 
+            	<button type="button" class="btn btn-warning">Añadir participantes</button>
+            	<button type="button" class="btn btn-warning">Continuar</button>
+            </div>
+        </div>
 
 	</body>
 </html>
+
+<style type="text/css">
+
+	.Title{
+        color: white;        
+        font-size: 4rem;
+        font-family: 'Dancing Script', cursive;
+        position: relative;
+    }
+    .Indication{
+    	color:white;
+    }
+    .costo-prefencias{
+    	float:left;
+    	padding:2em;
+    	width:45%
+    }
+    .Fechas-Mensaje{
+    	float:right;
+    	padding:2em;
+    	width:45%
+    }
+    .form-label{
+    	color: white;
+    }
+    .controls{
+        float:right;
+        padding:4em;
+    }
+
+</style>
