@@ -8,35 +8,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
-<body background="normal.png">
+<body >
     <nav class="navbar navbar-expand-lg navbar-dark mi-navbar">
-        <a class="navbar-brand" href="#">Permuta</a>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Intercambio
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Crear</a>
-                    <a class="dropdown-item" href="#">Unirte</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Consultar</a>
-                </div>
-            </li>
+           
           </ul>
           <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="Registro.html">Registrarse</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Iniciar sesion</a>
+                    <a class="nav-link" href="Login.html">Iniciar sesion</a>
                 </li>
-          </ul>
+           </ul>
         </div>
     </nav>
     <div class="back-img">
@@ -46,11 +34,10 @@
             <a href="RegistroInvit.html">
             <div class="boton"> <button type="button" class="btn btn-warning">Comenzar Intercambio</button> </div>
             <a href="VisualizaciónAdmin.html">
-            <div class="boton"> <button type="button" class="btn btn-warning">Stutus Intercambio</button> </div>
-            <a href="VisualizaciónAdmin.html">
+            <div class="boton"> <button type="button" class="btn btn-warning">Status Intercambio</button> </div>
+            <a href="IngresoInvit.html">
             <div class="boton"> <button type="button" class="btn btn-warning">Invitado de Honor</button> </div>
             </button>
-
         </div>
     </div>
     
@@ -65,8 +52,13 @@
     .mi-navbar{
         background-color: #090f1d;
     }
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
     .back-img{
-        background-image: url(/assets/img/Fondo_normal.png);
+        background-image: url("assets/img/Fondo_normal.png");
         /*background-color: brown;*/
         width: 100%;
         height: 100%;

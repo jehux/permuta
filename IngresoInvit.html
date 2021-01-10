@@ -2,13 +2,12 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-		<title> Acceso Administrador </title>
+		<title> Acceso Invitado </title>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="css/bootstrap.css">
+    	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> 
+    	<link rel="stylesheet" href="css/bootstrap.css">
 	</head>
 	<body background="normal.png">
-
 		<nav class="navbar navbar-expand-lg navbar-dark mi-navbar">
 		  
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,31 +27,27 @@
 			  </ul>
 			</div>
 		</nav>
-		<div class=Title> Ingreso Administrador </div>
 		<div class="Encabezado">
-			<div class=Title> Bienvenido Santa creador </div>
-			<p class="pregunta"> ¿Tienes el buzón y el códisanta secreto? </p>
+			<div class=Title> Bienvenido Invitado de Honor </div>
+			<p class="pregunta"> ¿Tienes el códisanta santa secreto? </p>
 		</div>
 		<div class="datosIngred">
 			<div class="mb-3">
-  				<label for="exampleFormControlTextarea1" class="form-label"> Nombre del Organizador </label>
+  				<label for="exampleFormControlTextarea1" class="form-label"> Nombre del inivtado de Honor </label>
   				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
 			</div>
 			<div class="mb-3">
   				<label for="exampleFormControlInput1" class="form-label"> Correo electrónico </label>
-  				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoOrganizador@ejemplo.com">
-			</div>
-			<div class="mb-3">
-  				<label for="exampleFormControlInput1" class="form-label"> Clave del intercambio </label>
-  				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Clave alfanumerica">
+  				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoInvitado@ejemplo.com">
 			</div>
 		</div>
 		<div class="pie de tabla">
-			<p class="Nota"> Nota: Debe ser el correo electrónico y nombre con el que te registro el creador del intercambio</p>
+			<p class="Nota"> Nota: Debe ser el correo electrónico y nombre con el que te registro el creador del intercambio </p>
 		</div>
 		<div class="controls">
             <div class="boton"> 
             	<a href="index.html"><button type="button" class="btn btn-warning">  Regresar  </button>
+            	<a href="AcepRechInvit.html"><button type="button" class="btn btn-warning">  Invitación  </button>
             	<a href="detalles.html"><button type="button" class="btn btn-warning">  Ingresar  </button>
             </div>
         </div>
@@ -61,17 +56,38 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     	<script src="./js/bootstrap.bundle.js"></script>
     	<script src="./js/bootstrap.min.js"></script>
-    	
+		
 	</body>
 </html>
 
 <style type="text/css">
+
 	.mi-navbar{
 			background-color: #090f1d;
 		}
-	
+
 	body{
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+	.FechaRegis{
+		color:white;
+    	font-size: 1em;
+	}
+	.TextDescrip{
+		color:white;
+    	font-size: 1.5em;
+	}
+	
+    .Indication{
+    	color:white;
+    	font-size: 2em;
+    }
+    .pregunta{
+    	color:white;
+    	font-size: em;    }
+    .form-label{
+    	color: white;
     }
 </style>
