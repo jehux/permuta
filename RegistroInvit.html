@@ -28,41 +28,56 @@
 		</nav>
 		<div class="back-img">
 			<div class="formularios">
-				<div class=Title> Agregar lista de amigos ☻</div>
-				<div class="Organizador">
-					<p class="Indication"> Organizador </p>
-					<div class="mb-3">
-						<label for="exampleFormControlTextarea1" class="form-label">Nombre del Organizador</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
-					</div>
-					<div class="mb-3">
-						<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoOrganizador@ejemplo.com">
-					</div>
-				</div>
+				<div class=Title> Seleccion de Invitados ☻</div>
 				<div class="invitados">
-					<p class="Indication"> Lista de invitados </p>
-					<div class="mb-3">
-						<label for="exampleFormControlTextarea1" class="form-label">Nombre del Invitado</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
-					</div>
-					<div class="mb-3">
-						<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoInvitado@ejemplo.com">
-					</div>
-					<div class="mb-3">
-						<label for="exampleFormControlTextarea1" class="form-label">Nombre del Invitado</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
-					</div>
-					<div class="mb-3">
-						<label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoInvitado@ejemplo.com">
-					</div>
+					<p class="Indication"> Lista de participantes </p>
+					<div class="select-AP">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" rows="1">
+                            <option selected>Ver opciones de selección</option>
+                            <option value="1"> Jehu </option>
+                            <option value="2"> Karly </option>
+                            <option value="3"> Erick </option>
+                        </select>
+                    </div>
+                    <div>
+                        <br><br><br>
+                    </div>
+                    <div class="Tab-AP">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Correo</th>
+                                    <th scope="col">      </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                        <td>Jehu</td>
+                                        <td>jehunieves@ipn.mx</td>
+                                        <td> <button type="button" class="btn btn-outline-danger"> Eliminar </button> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                        <td>Karly</td>
+                                        <td>karlarangel@ipn.mx</td>
+                                        <td> <button type="button" class="btn btn-outline-danger"> Eliminar </button> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                        <td>Erick</td>
+                                        <td>ericklopez@ipn.mx</td>
+                                        <td> <button type="button" class="btn btn-outline-danger"> Eliminar </button> </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
 				</div>
 				<div class="controls">
 					<div class="boton"> 
-						<a href="especificaciones.html"><button type="button" class="btn btn-warning">Añadir participantes</button>
-						<button type="button" class="btn btn-warning">Continuar</button>
+						<a href="especificaciones.html"><button type="button" class="btn btn-warning">Continuar</button>
 					</div>
 				</div>
 			</div>
@@ -135,6 +150,29 @@
     .controls{
         float:right;
         padding:4em;
+    }
+    .form-select{
+        float:right;
+        padding:1em;
+        width:100%
+    }
+    .select-AP{
+        margin-top: 1em;
+        margin-bottom: 2em;
+        padding: 1em;
+    }
+    .Tab-AP{
+        margin-top: 1em
+    }
+    .table{
+        margin-top: 2em;
+        padding: 1em;
+    }
+    td{
+        color: white;
+    }
+    th{
+        color: white;
     }
 
 </style>
