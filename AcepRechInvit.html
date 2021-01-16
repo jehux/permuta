@@ -27,6 +27,7 @@
 			  </ul>
 			</div>
 		</nav>
+		
 		<div class="Encabezado">
 			<p class="Indication"> En este año... </p>
 			<p class="pregunta"> ¿Te gustaría ser santa y recibir obsequio? </p>
@@ -66,7 +67,33 @@
 		}
 	body{
         background-repeat: no-repeat;
+        background-size: cover; 
+        background-attachment: fixed;
+        background-position:center;
+        width:100%;
+        height: 100%;
+    }
+	.back-img{
+		width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover;
+        position: absolute;
+        z-index: 1;
+        padding: 3em;
+        
+    }
+	.back-img:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        width:100%;
+        height:100%;
     }
 	.FechaRegis{
 		color:white;
@@ -76,9 +103,7 @@
 		color:white;
     	font-size: 1.5em;
 	}
-	.Encabezado{
 
-	}
     .Indication{
     	color:white;
     	font-size: 2em;
