@@ -32,33 +32,44 @@
 		</nav>
 		
 		<div class="back-img">
-			<div class=Title> Ingreso Administrador </div>
-			<div class="Encabezado">
-				<div class=Title> Bienvenido Santa creador </div>
-				<p class="pregunta"> ¿Tienes el buzón y el códisanta secreto? </p>
+			<div class=Title> ¡Bienvenido Santa creador! </div>
+			<div class="tit-central">
+				<div class="card" id="principal">
+	  				<div class="card-body" id="prinB">
+	    				<h5 class="card-title">Tienes estos intercambios pendientes</h5>
+	    				<h6 class="card-subtitle mb-2 text-muted">Selecciona cual es el que quieres consultar</h6>
+	  				</div>
+				</div>	
 			</div>
-			<div class="datosIngred">
-				<div class="mb-3">
-					<label for="exampleFormControlTextarea1" class="form-label"> Nombre del Organizador </label>
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
-				</div>
-				<div class="mb-3">
-					<label for="exampleFormControlInput1" class="form-label"> Correo electrónico </label>
-					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoOrganizador@ejemplo.com">
-				</div>
-				<div class="mb-3">
-					<label for="exampleFormControlInput1" class="form-label"> Clave del intercambio </label>
-					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Clave alfanumerica">
-				</div>
-			</div>
-			<div class="pie de tabla">
-				<p class="Nota"> Nota: Debe ser el correo electrónico y nombre con el que te registro el creador del intercambio</p>
-			</div>
-			<div class="controls">
-				<div class="boton"> 
-					<a href="index.html"><button type="button" class="btn btn-warning">  Regresar  </button>
-					<a href="detalles.html"><button type="button" class="btn btn-warning">  Ingresar  </button>
-				</div>
+			<div class="table-responsive">
+			<div class="Tab-AP">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col"> Clave de intercambio </th>
+                                    <th scope="col">      </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                        <td>J8K5E22</td>
+                                        <td><a href="EstatusInvit.html"><button type="button" class="btn btn-outline-light"> Acceder </button> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                        <td>J9K5E63</td>
+                                        <td><a href="EstatusInvit.html"><button type="button" class="btn btn-outline-light"> Acceder </button> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                        <td>J98K5E21</td>
+                                        <td><a href="EstatusInvit.html"><button type="button" class="btn btn-outline-light"> Acceder </button> </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
 			</div>
 		</div>
 
@@ -105,4 +116,67 @@
         
         
     }
+    .card{
+    	background-color: rgba(0,0,0,0.3);
+    }
+    .tit-central{
+    	position: center;
+    	width: 50%;
+    	margin-bottom: 0.5em;
+    	margin-top: 1em;
+    	margin-left: 25%;
+    }
+    #principal{
+    	position: center;
+    	margin-bottom: 2em;
+		text-align: center;
+		
+    }
+    #prinB{
+    	position: center;
+		text-align: center;
+		font-size: 1.3em;
+    }
+    .card-title{
+    	color:white;
+		text-align: center;
+		font-size: 1.5em;
+    }
+    .card-subtitle{
+    	color: white;
+		text-align: center;
+		font-size: 0.7em;
+    }
+    .Title{
+        color: white;        
+        font-size: 4rem;
+        font-family: 'Dancing Script', cursive;
+        position: relative;
+        text-align: center;
+        
+    }
+    .Tab-AP{
+        margin-top: 1em;
+        width:50%;
+        position: relative;
+        left:25%;
+        
+    }
+    .table{
+        margin-top: 2em;
+        padding: 1em;
+        width:100%;
+    }
+    td{
+        color: white;
+    }
+    th{
+        color: white;
+    }
+    .controls{
+        float: right;
+        padding:4em;
+        margin-right: 42%;
+    }
+
 </style>
