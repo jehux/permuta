@@ -29,69 +29,13 @@
 			  </ul>
 			</div>
 		</nav>
-
-
-		<div class="tit-central">
-
-			<div class="card" id="principal">
-  				<div class="card-body" id="prinB">
-    				<h5 class="card-title">Card title</h5>
-    				<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-  				</div>
-			</div>	
-		</div>
-
-		<div class="tarjetas">
-		<div class="card" id="card1" style="width: 18rem;">
-  			<img src="info.png" class="card-img-top" alt="Fecha">
-  			<div class="card-body">
-    			<p class="card-text">Fecha del intercambio: </p><br>
-  			</div>
-		</div>
-		<div class="card" id="card2" style="width: 18rem;">
-  			<img src="diner.png"  class="card-img-top" alt="Costo">
-  			<div class="card-body">
-    			<p class="card-text">El costo mínimo del regalo es: </p><br>
-  			</div>
-		</div>
-		<div class="card" id="card3" style="width: 18rem;">
-  			<img src="reg.png"  class="card-img-top" alt="Regalo">
-  			<div class="card-body">
-    			<p class="card-text">Selecciona la opción de tu prefencia</p>
-    			<div class="bd-example">
-					<div class="btn-group" role="group" aria-label="Basic outlined example">
-  						<button type="button" class="btn btn-outline-warning">Libros</button>
-  						<button type="button" class="btn btn-outline-warning">Licores</button>
-						<button type="button" class="btn btn-outline-warning">Gadgets</button>
-					</div>
-				</div>
-  			</div>
-		</div>
-		<div class="card" id="card4" style="width: 18rem;">
-  			<div class="card-body">
-    			<p class="card-text"> Tienes un mensaje: </p>
-    			<div class="card-body">
-    				Aquí aparecerá el mensaje del creador si es que ha escrito alguno
-  				</div>
-  			</div>
-		</div>
-		</div>
-		<div class="parteInf">
-			<div class="card" id="prefer" style="width: 70%; height: 100%">
-  			<div class="card-body">
-    			<p class="card-text"> Tienes un mensaje: </p>
-    			<div class="card-body">
-    				Aquí aparecerá el mensaje del creador si es que ha escrito alguno
-  				</div>
-  			</div>
-		</div>
+		<div class="back-img">
 			
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     	<script src="./js/bootstrap.bundle.js"></script>
     	<script src="./js/bootstrap.min.js"></script>
-
 		
 	</body>
 </html>
@@ -99,66 +43,36 @@
 <style type="text/css">
 	.mi-navbar{
 			background-color: #090f1d;
-	}
-	body{
+		}
+		body{
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; 
+        background-attachment: fixed;
+        background-position:center;
+        width:100%;
+        height: 100%;
+        
+        
     }
-    .card{
-    	background-color: rgba(0,0,0,0.3);
+	.back-img{
+		width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        padding: 3em;
+    
     }
-    .tarjetas{
-    	display: inline;
+	.back-img:before {
+        content:'';
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        width:100%;
+        height:100%;
+        
+        
     }
-    .card-text{
-    	color: white;
-    }
-    .card-body{
-    	color: rgba(100,100,100,100.3);
-    }
-    #card1{
-    	display: inline-block;
-    	margin-top: 1em;
-    	margin-right: 0.5em;
-    	margin-left: 5%;
-    }
-    #card2{
-    	display: inline-block;
-    	margin-top: 1em;
-    	margin-right: 0.5em;
-    }
-    #card3{
-    	display: inline-block;
-    	margin-top: 1em;
-    	margin-right: 0.5em;
-    }
-    #card4{
-    	display: inline-block;
-    	margin-top: 1em;
-    	margin-right: 0.5em;
-    }
-    .tit-central{
-    	position: center;
-    	width: 90%;
-    	margin-bottom: 0.5em;
-    	margin-top: 1em;
-    	margin-left: 5%;
-    }
-    #principal{
-    	position: center;
-    	margin-bottom: 2em;
-    }
-    #prinB{
-    	position: center;
-    }
-    .card-title{
-    	color:white;
-    }
-    .card-subtitle{
-    	color: white;
-    }
-    .parteInf{
-    	margin-left: 5%;
-    }
-
 </style>

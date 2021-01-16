@@ -73,11 +73,20 @@
 			</div>
 		</div>
 		<div class="Fechas-Mensaje">
-			<div class="mb-3">
-				<label for="exampleFormControlTextarea1" class="form-label">Fecha de registro</label>
-  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Fecha maxima de registro"></textarea>
-  				<label for="exampleFormControlTextarea1" class="form-label">Fecha de Realización</label>
-  				<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Fecha de intercambio"></textarea>
+			<div class="mb-3"><br>
+				<div class="form-group row">
+					<label for="example-datetime-local-input" class="col-2 col-form-label">Fecha Registro</label>
+					<div class="col-10">
+					  <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+					</div>
+				  </div>
+				  <br>
+				  <div class="form-group row">
+					<label for="example-datetime-local-input" class="col-2 col-form-label">Fecha Intercambio</label>
+					<div class="col-10">
+					  <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+					</div>
+				  </div>
   				<br><br><label for="exampleFormControlTextarea1" class="form-label">¿Cual es tu deseo navideño?</label>
   				<textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Escribe un mensaje para que lo puedan leer los participantes"></textarea>
 			</div>
@@ -100,24 +109,36 @@
 	.mi-navbar{
         background-color: #090f1d;
     }
+	body{
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-attachment: fixed;
+        background-position:center;
+        width:100%;
+        height: 100%;
+        
+        
+    }
 	.back-img{
 		width: 100%;
         height: 100%;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
         position: absolute;
         z-index: 1;
-        padding: 3em;   
+        padding: 3em;
+    
     }
 	.back-img:before {
         content:'';
-        position: absolute;
+        position: relative;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0,0,0,0.3);
+        background-color: rgba(0, 0, 0, 0.3);
+        width:100%;
+        height:100%;
+        
+        
     }
 	.formulario{
 		position: relative;
@@ -132,6 +153,7 @@
         font-size: 4rem;
         font-family: 'Dancing Script', cursive;
         position: relative;
+		text-align: center;
     }
     .Indication{
     	color:white;
@@ -163,5 +185,8 @@
     	padding:1em;
     	width:100%
     }
-
+	label{
+		color: white;
+		text-align: center;
+	}
 </style>
