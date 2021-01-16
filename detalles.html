@@ -33,29 +33,31 @@
 			<div class="tit-central">
 				<div class="card" id="principal">
 	  				<div class="card-body" id="prinB">
-	    				<h5 class="card-title">Card title</h5>
-	    				<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+	    				<h5 class="card-title">ERES SANTA SECRETO DE...</h5>
+	    				<h6 class="card-subtitle mb-2 text-muted">NombreInvitado Asignado</h6>
 	  				</div>
 				</div>	
 			</div>
 
 			<div class="tarjetas">
-				<div class="card" id="card1" style="width: 18rem;">
+				<div class="card" id="card1" style="width: 21.5%;">
 		  			<img src="info.png" class="card-img-top" alt="Fecha">
 		  			<div class="card-body">
-		    			<p class="card-text">Fecha del intercambio: </p><br>
+		    			<p class="card-text">Fecha del intercambio: </p>
+		    			<p class="card-text">DD/MM/AA </p>
 		  			</div>
 				</div>
-				<div class="card" id="card2" style="width: 18rem;">
-		  			<img src="diner.png"  class="card-img-top" alt="Costo">
+				<div class="card" id="card2" style="width: 21.5%;">
+		  			<img src="diner.png" height="267" width="30" class="card-img-top" alt="Costo">
 		  			<div class="card-body">
-		    			<p class="card-text">El costo mínimo del regalo es: </p><br>
+		    			<p class="card-text">El costo mínimo del regalo es: </p>
+		    			<p class="card-text">$$$$$$ </p>
 		  			</div>
 				</div>
-				<div class="card" id="card3" style="width: 18rem;">
-		  			<img src="reg.png"  class="card-img-top" alt="Regalo">
+				<div class="card" id="card2" style="width: 21.5%;">
+		  			<img src="reg.png" height="262" class="card-img-top" alt="preferencia">
 		  			<div class="card-body">
-		    			<p class="card-text">Selecciona la opción de tu prefencia</p>
+		    			<p class="card-text">Selecciona preferencia: </p>
 		    			<div class="bd-example">
 							<div class="btn-group" role="group" aria-label="Basic outlined example">
 		  						<button type="button" class="btn btn-outline-warning">Libros</button>
@@ -65,25 +67,30 @@
 						</div>
 		  			</div>
 				</div>
-				<div class="card" id="card4" style="width: 18rem;">
+				<div class="card" id="card2" style="width: 21.5%;">
+		  			<img src="mensaje.png" height="242" class="card-img-top" alt="mensaje">
 		  			<div class="card-body">
-		    			<p class="card-text"> Tienes un mensaje: </p>
-		    			<div class="card-body">
-		    				Aquí aparecerá el mensaje del creador si es que ha escrito alguno
-		  				</div>
-		  			</div>
-				</div>
-				</div>
-				<div class="parteInf">
-					<div class="card" id="prefer" style="width: 70%; height: 100%">
-		  			<div class="card-body">
-		    			<p class="card-text"> Tienes un mensaje: </p>
-		    			<div class="card-body">
-		    				Aquí aparecerá el mensaje del creador si es que ha escrito alguno
-		  				</div>
+		    			<p class="card-text"> Tienes un mensaje </p>
+		    			<p class="card-text"> Mensaje del creador si es que ha escrito alguno </p>
 		  			</div>
 				</div>
 			</div>
+				<div class="parteInf">
+					<div class="card" id="prefer" style="width: 70%;">
+		  			<div class="card-body">
+		    			<p class="card-text"> Tenemos un secreto que contarte </p>
+		    			<p class="card-text"> No queremos que quedes mal así que te diremos que NOM-INVITADO tiene preferencia por:  (opcionSelec)</p>
+		    			<p class="card-text"> Pero ten cuidado, no le vayas a decir a nadie... </p>
+		  			</div>
+				</div>
+			</div>
+
+			<div class="controls">
+            	<div class="boton"> 
+            		<a href="index.html"><button type="button" class="btn btn-warning">  Salir  </button>
+            	</div>
+        	</div>
+
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -140,24 +147,24 @@
     }
     #card1{
     	display: inline-block;
-    	margin-top: 1em;
-    	margin-right: 0.5em;
+    	margin-bottom: 1em;
+    	margin-right: 1%;
     	margin-left: 5%;
     }
     #card2{
     	display: inline-block;
-    	margin-top: 1em;
-    	margin-right: 0.5em;
+    	margin-bottom: 1em;
+    	margin-right: 1%;
     }
     #card3{
     	display: inline-block;
-    	margin-top: 1em;
-    	margin-right: 0.5em;
+    	margin-bottom: 1em;
+    	margin-right: 1%;
     }
     #card4{
     	display: inline-block;
-    	margin-top: 1em;
-    	margin-right: 0.5em;
+    	margin-bottom: 1em;
+    	margin-right: 1%;
     }
     .tit-central{
     	position: center;
@@ -181,5 +188,20 @@
     }
     .parteInf{
     	margin-left: 5%;
+    	margin-bottom: 0.5em;
+    }
+    button{
+    	margin: 0;
+    }
+    .mensj-Org{
+    	color: rgba(100,100,100,100.3);
+    }
+    .card #prefer {
+    	margin-bottom: 1em;
+    	height: 3em;
+    }
+    .controls{
+        position:right;
+        padding:4em;
     }
 </style>
