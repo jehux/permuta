@@ -28,16 +28,62 @@
 			   </ul>
 			</div>
 		</nav>
-		<div class=Title> Lista de santa </div>
-		<div class="container-md"> CLAVE DEL INTERCAMBIO </div>
-		<div class="controls">
-            <div class="boton"> 
-            	<button type="button" class="btn btn-warning">Soy santa secreto de...</button>
-            	<a href="especificaciones.html"><button type="button" class="btn btn-warning">  Regresar  </button>
-            	<a href="index.html"><button type="button" class="btn btn-warning">Finalizar</button>
-            </div>
-        </div>
-
+		<div class="back-img">
+			<div class=Title> Lista de santa </div>
+			<div class="tarjetas">
+				<div class="card" id="card1" >
+		  			<div class="card-body">
+						<h5 class="card-title">Clave del Intercambio</h5>
+						<h5 class="card-subtitle mb-2 text-muted">J9E8K5IM</h5>
+		  			</div>
+				</div>
+				<div class="card" id="card2" >
+		  			<div class="card-body">
+						<h5 class="card-title">Lista de Invitados</h5>
+						<div class="table-responsive">
+							
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Nombre</th>
+											<th scope="col">Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+												<td>Jehu</td>
+												<td>Negado</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+												<td>Karly</td>
+												<td>Pendiente</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+												<td>Erick</td>
+												<td>Aceptado</td>
+												
+											</tr>
+									</tbody>
+								</table>
+							
+						</div>
+						
+		  			</div>
+				</div>
+				
+			</div>
+			<div class="controls">
+				<div class="boton"> 
+					<a href="detalles.html"><button type="button" class="btn btn-warning" id="izq">Soy santa secreto de...</button>
+					<a href="especificaciones.html"><button type="button" class="btn btn-warning" id="medio">  Regresar  </button>
+					<a href="index.html"><button type="button" class="btn btn-warning" id="der">Finalizar</button>
+				</div>
+			</div>
+		</div>
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     	<script src="./js/bootstrap.bundle.js"></script>
     	<script src="./js/bootstrap.min.js"></script>
@@ -84,25 +130,104 @@
         font-size: 4rem;
         font-family: 'Dancing Script', cursive;
         position: relative;
+		text-align: center;
     }
+	.container-md{
+		color:white;
+		text-align: center;
+	}
     .Indication{
     	color:white;
     }
-    .invitados{
-    	float:left;
-    	padding:2em;
-    	width:45%
-    }
-    .Organizador{
-    	float:right;
-    	padding:2em;
-    	width:45%
-    }
+    
     .form-label{
     	color: white;
     }
-    .controls{
-        float:right;
-        padding:4em;
+	.card{
+    	background-color: rgba(0,0,0,0.3);
     }
+    .tarjetas{
+    	display: inline;
+		position: relative;
+		width: 100%;
+		margin-bottom: ;
+    }
+    .card-text{
+    	color: white;
+    }
+    .card-body{
+    	color: rgba(100,100,100,100.3);
+    }
+    #card1{
+    	display: relative;
+    	margin-top: 5%;
+    	margin-right: 3%;
+    	margin-left: 12%;
+		float:left;
+		width:40%;
+    }
+	#card1 button{
+		margin-left: 35%;
+		margin-top: 8%;
+	}
+    #card2{
+    	display: relative;
+    	margin-bottom: 1em;
+    	margin-right: 5%;
+		float: right;
+		width:28%;
+		height: auto;
+    }
+    #principal{
+    	position: center;
+    	margin-bottom: 2em;
+		text-align: center;
+    }
+    .card-title{
+    	color:white;
+		text-align: center;
+		font-size: 2em;
+    }
+    .card-subtitle{
+    	color: white;
+		text-align: center;
+		font-size: 1.5em;
+    }
+	
+
+    .controls{
+        position:right;
+        padding:4em;
+		display: relative;
+		margin-top: 10em;
+		margin-left: auto;
+    }
+
+	button{
+    	margin-left:1em;
+    }
+	.boton{
+		display: inline;
+		position: relative;
+		margin-left: 6em;
+		margin-bottom: 6em;
+	}
+	#der{
+		float:right;
+		margin-right:18%;
+	}
+	#medio{
+		margin-left: 6.3em;
+	}
+	#izq{
+		margin:auto;
+	}
+	td{
+        color: white;
+    }
+    th{
+        color: white;
+    }
+
+
 </style>
