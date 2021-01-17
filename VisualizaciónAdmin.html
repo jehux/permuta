@@ -33,34 +33,29 @@
 		
 		<div class="back-img">
 			<div class=Title> Ingreso Administrador </div>
-			<div class="Encabezado">
-				<div class=Title> Bienvenido Santa creador </div>
-				<p class="pregunta"> ¿Tienes el buzón y el códisanta secreto? </p>
-			</div>
-			<div class="datosIngred">
-				<div class="mb-3">
-					<label for="exampleFormControlTextarea1" class="form-label"> Nombre del Organizador </label>
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre y apellido"></textarea>
+			
+			<div class="card">
+				<div class="card-header">
+					<h3>Ingresar codigo</h3>
 				</div>
-				<div class="mb-3">
-					<label for="exampleFormControlInput1" class="form-label"> Correo electrónico </label>
-					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoOrganizador@ejemplo.com">
-				</div>
-				<div class="mb-3">
-					<label for="exampleFormControlInput1" class="form-label"> Clave del intercambio </label>
-					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Clave alfanumerica">
-				</div>
-			</div>
-			<div class="pie de tabla">
-				<p class="Nota"> Nota: Debe ser el correo electrónico y nombre con el que te registro el creador del intercambio</p>
-			</div>
-			<div class="controls">
-				<div class="boton"> 
-					<a href="index.html"><button type="button" class="btn btn-warning">  Regresar  </button>
-					<a href="detalles.html"><button type="button" class="btn btn-warning">  Ingresar  </button>
+				<div class="card-body">
+					<form>
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" class="form-control" placeholder="Codigo">
+						</div>
+						
+						<div class="form-group">
+							<input type="submit" value="Login" class="btn float-right login_btn">
+						</div>
+					</form>
 				</div>
 			</div>
+
 		</div>
+
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     	<script src="./js/bootstrap.bundle.js"></script>
@@ -73,24 +68,25 @@
 	.mi-navbar{
 			background-color: #090f1d;
 		}
-	
-		body{
-        background-repeat: no-repeat;
-        background-size: cover; 
-        background-attachment: fixed;
-        background-position:center;
-        width:100%;
-        height: 100%;
-        
-        
-    }
+	.Title{
+		color: white;        
+		font-size: 3rem;
+		font-family: 'Dancing Script', cursive;
+	}
+	body{
+		background-repeat: no-repeat;
+		background-size: cover; 
+		background-attachment: fixed;
+		background-position:center;
+		width:100%;
+		height: 100%;  
+	}
 	.back-img{
 		width: 100%;
         height: 100%;
         position: absolute;
         z-index: 1;
         padding: 3em;
-    
     }
 	.back-img:before {
         content:'';
@@ -101,8 +97,55 @@
         right: 0;
         background-color: rgba(0, 0, 0, 0.3);
         width:100%;
-        height:100%;
-        
-        
+        height:100%;   
     }
+
+	.card{
+	height: auto;
+	margin-top: 10%;
+	margin-bottom: auto;
+	width: 27rem;
+	background-color: rgba(0,0,0,0.3) !important;
+	}
+	.card-header h3{
+	color: white;
+	}
+
+	.social_icon{
+	position: absolute;
+	right: 20px;
+	top: -45px;
+	}
+
+	.input-group-prepend span{
+	width: 50px;
+	background-color: #FFC312;
+	color: black;
+	border:0 !important;
+	}
+
+	input:focus{
+	outline: 0 0 0 0  !important;
+	box-shadow: 0 0 0 0 !important;
+
+	}
+
+
+	.login_btn{
+	color: black;
+	background-color: #FFC312;
+	width: 100px;
+	}
+
+	.login_btn:hover{
+	color: black;
+	background-color: white;
+	}
+
+	.links{
+	color: white;
+	}
+
+	.links a{
+	margin-left: 4px;}
 </style>
